@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {View,
         StyleSheet,
         Image,
+        StatusBar,
         Text
 } from 'react-native';
 import LoginFrom from './LoginFrom'
@@ -10,6 +11,9 @@ export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
+      <StatusBar>
+        barStyle="light-content"
+      </StatusBar>
         <View style={styles.logoContainer}>
           <Image style={styles.logo}
           source={require('../../Images/Octocat.png')}>
